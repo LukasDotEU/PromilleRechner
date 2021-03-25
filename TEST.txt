@@ -1,0 +1,163 @@
+##########################------Hinweise------##########################
+1. Bei sehr kleinen Alkoholmengen, könnte man noch auf 0g Alkohol runden. (Siehe Test 7)
+
+2. Bei geforderter Ganzzahl und Eingabe einer Kommazahl wird die Zahl vor dem Komma als integer genommen und der Rest ignoriert. (siehe Test 7)
+
+3. Wird nach einer Zahl etwas anderes geschrieben (z.B. Buchstaben) wird die Zahl genommen und der Rest ignoriert. (siehe Test 3)
+
+4. Kopiert man zwischen den geschwungenen Strichen stehenden Teil
+~~~~~~~~~~~~~~
+
+sddfsfs
+
+
+sdfsfsf
+
+~~~~~~~~~~~~~~
+und fügt ihn als Eingabe ein, so wird 2mal eine Fehlermeldung ausgegeben.
+Dies liegt an der Art und Weise der Eingabe in der Konsole und kann nur durch Einfügen von Inhalt in dieser passieren. (Bei normaler Eingabe nicht)
+
+
+##########################------Tests------##########################
+
+======1. Test: Normale einfache Erwartungsgemäße Eingabe bei einem Mann======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: 1
+Liter von Bier: 0.5
+Getraenk-Nr.: 0
+Du nahmst 20g reinen Alkohol zu dir.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 55
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 1
+Promillewert bei einem Mann: 0.534759
+
+
+======2. Test: Mehrfache Auswahl von Getränken bei einer Frau======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: 2
+Liter von Sekt: 0.7
+Getraenk-Nr.: 4
+Liter von Rum: 1
+Getraenk-Nr.: 5
+Liter von Wodka: 0.01
+Getraenk-Nr.: 0
+Du nahmst 364.8g reinen Alkohol zu dir.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 55.555
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 2
+Promillewert bei einer Frau: 11.939
+
+
+======3. Test: Falsche Eingaben bei einem Kind======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: -1
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: 6
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: 3453
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: -453
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: d
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: A
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: ßfsfsfs
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: 1ad
+Liter von Bier: 0.5
+Getraenk-Nr.: 0
+Du nahmst 20g reinen Alkohol zu dir.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 0
+FEHLER! Das Gewicht muss zwischen 1 und 400 liegen.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 401
+FEHLER! Das Gewicht muss zwischen 1 und 400 liegen.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 20
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: -1
+FEHLER! Die Eingabe muss 0,1 oder 2 sein. Wiederhole deine Eingabe.
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: -45
+FEHLER! Die Eingabe muss 0,1 oder 2 sein. Wiederhole deine Eingabe.
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 3
+FEHLER! Die Eingabe muss 0,1 oder 2 sein. Wiederhole deine Eingabe.
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 453
+FEHLER! Die Eingabe muss 0,1 oder 2 sein. Wiederhole deine Eingabe.
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: gggeee
+FEHLER! Die Eingabe muss 0,1 oder 2 sein. Wiederhole deine Eingabe.
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 0
+Ein Kind sollte NIEMALS Alkohol trinken!!!
+Der THEORETISCHE Promillewert liegt bei: 1.33333
+
+
+======4. Test: Lange Eingaben======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: hjdskfffffffffffffffffhjkdsfffffffffffffffhjfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkdsfkds
+FEHLER! Dies ist kein gueltiges Getraenk. Wiederhole deine Angabe.
+Getraenk-Nr.: 1
+Liter von Bier: 0.5
+Getraenk-Nr.: 0
+Du nahmst 20g reinen Alkohol zu dir.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 55
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 1
+Promillewert bei einem Mann: 0.534759
+
+
+======5. Test: Kein Getränk eingeben======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: 0
+Wer nichts trinkt hat eine Blutalkoholkonzentration von 0 Promille. Sehr gut!
+
+
+======6. Test: Alkoholgewicht von 0g======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: 1
+Liter von Bier: 0
+Getraenk-Nr.: 0
+Wer nichts trinkt hat eine Blutalkoholkonzentration von 0 Promille. Sehr gut!
+
+
+======7. Test: Sehr kleine Menge an Alkohol======
+Gib die Nummer deines Getraenkes an bzw. 0 falls das alle Getraenke waren.
+1.: Bier (5%)
+2.: Sekt (11%)
+3.: Lemon-Wodka (18%)
+4.: Rum (37.5%)
+5.: Wodka (40%)
+Getraenk-Nr.: 1
+Liter von Bier: 50
+FEHLER! Die Eingabe muss zwischen 0 und 5 liegen. Versuche es erneut.
+Liter von Bier: 0.00000000000000000000000000000000000000000000000000000000000000000001
+Getraenk-Nr.: 0
+Du nahmst 4e-67g reinen Alkohol zu dir.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: a
+FEHLER! Das Gewicht muss zwischen 1 und 400 liegen.
+Wie viel Kg wiegst du (Dezimalstellen erlaubt)?: 55.5
+Bist du ein Kind (0), Mann (1) oder Frau (2)?: 1.5
+Promillewert bei einem Mann: 1.05988e-68

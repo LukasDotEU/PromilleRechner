@@ -1,0 +1,1 @@
+g++ -Wall -std=c++14 main.cpp Getraenk.cpp Person.cpp Mann.cpp Frau.cpp Kind.cpp -o Abschlussaufgabe26GdP
